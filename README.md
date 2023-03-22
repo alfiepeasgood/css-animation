@@ -8,4 +8,4 @@ How to view:<br />
 <br />
 
 
-https://splendid-gingersnap-a12059.netlify.app/
+https://css-animation-alfiepeasgood.netlify.app/
