@@ -1,0 +1,115 @@
+p {
+  animation: color-change 3s infinite, size-change 3s infinite ;
+
+}
+.box2 {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  animation: rotate 3s infinite;
+}
+
+.box3 {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  animation: rotate 3s;
+}
+
+
+
+.box-wrapper{
+  padding-top: 30px;
+}
+
+.box {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  
+  
+  
+}
+
+.box:hover {
+  animation: bg-color-change 3s infinite, rotate 3s infinite, run 5s;
+}
+.box2:hover {
+  animation: bg-color-change 3s infinite, rotate 3s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes color-change {
+  0% { color: red; }
+  10% { color: orange; }
+  20% { color: yellow; } 
+  30% { color: yellowgreen; }
+  40% { color: green; }
+  50% { color: turquoise; }
+  60% { color: lightcyan; }
+  70% { color: blue; }
+  80% { color: purple; }
+  90% { color: indigo; }
+  100% { color: red; }
+}
+
+@keyframes run{
+  0%{transform: translate(0px)}
+  50%{transform: translateX(500px)}
+  100%{transform: translateX(0px)}
+}
+
+@keyframes bg-color-change {
+  0% { background-color: red; }
+  10% { background-color: orange; }
+  20% { background-color: yellow; } 
+  30% { background-color: yellowgreen; }
+  40% { background-color: green; }
+  50% { background-color: turquoise; }
+  60% { background-color: lightcyan; }
+  70% { background-color: blue; }
+  80% { background-color: purple; }
+  90% { background-color: indigo; }
+  100%,0% { background-color: red; }
+}
+@keyframes size-change{
+  0% {transform: translateY(0px); font-size: 40px;}
+  25%{transform: translateX(250px) translateY(100px); font-size: 20px;}
+  75%{transform: translateY(0px) translateX(500px); font-size: 0px;}
+  100%{transform: translateY(0px) translateX(0px); font-size: 40px;}
+  
+}
+  height: 100%;
+  width: 100%;
+}
+.container{
+  position: relative;
+  width: 50%;
+}
+
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
